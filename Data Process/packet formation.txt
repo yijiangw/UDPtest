@@ -1,0 +1,11 @@
+
+0020   21 1e 04 00 10 02 05 c2 00 00 |01 00 00 00| |00 00   !...............
+0030   00 00| 00 00 91 fe 91 ff 37 ff 8b fe 49 00 25 00   ........7...I.%.
+
+0020   21 1e 04 00 10 02 05 c2 00 00 |02 00 00 00|(4bytes number of packet) |b0 05   !...............
+0030   00 00 00 00 |(6bytes number of bytes received before this packet) 11 ff 5b ff 9b ff cf fe 3b 00 3e 00   ......[.....;.>.
+
+first 4 bits for packet number
+then 6 bits for bytes already recived before
+1466 per UDP carry data
+1456 ADC_Data per packet
