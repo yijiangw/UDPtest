@@ -1,5 +1,7 @@
 import socket
 import struct
+import redis
+r = redis.Redis(host='localhost', port=6379, decode_responses=True)  
 # 创建socket
 with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s:
     s.bind(("192.168.33.30", 4098))
